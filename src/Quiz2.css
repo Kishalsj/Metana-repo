@@ -1,0 +1,97 @@
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+
+
+
+
+.Quiz2Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.user-info2 {
+    opacity: 0;
+    transform: translateY(30%); 
+    animation: slideUp 1s forwards;
+    padding: 50px;
+    max-width: 1000px;
+    width: 100%;
+    
+}
+
+
+.form2 {
+    margin-top: 20px;
+}
+
+.field {
+    margin-bottom: 50px;
+}
+
+.field2 {
+    position: relative; 
+    margin-bottom: 50px;
+}
+
+.field2 input {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.8rem; 
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+}
+
+.field2 input:focus {
+    border-bottom-color: #9748f7;
+}
+
+.field2 input::placeholder {
+    color: #d3b6ff80; 
+    font-size: 1.8rem;
+}
+
+.underline2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e000;
+    transition: background-color 0.3s;
+}
+
+.field2 input:focus + .underline2 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+

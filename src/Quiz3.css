@@ -1,0 +1,112 @@
+
+
+.Quiz3Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+ 
+}
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user-info3 {
+  opacity: 0;
+  transform: translateY(35%); 
+  animation: slideUp 1s forwards;
+  padding: 50px;
+  max-width: 800px;
+  width: 100%;
+  
+}
+
+
+
+
+.form3 {
+  margin-top: 20px;
+}
+
+.field3 {
+  position: relative; 
+  margin-bottom: 50px;
+}
+
+.Cdropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.Cinput {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px; 
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  outline: none;
+  transition: border-bottom-color 0.3s;
+  cursor: pointer;
+  color: #000000; 
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.Cinput:focus {
+  border-bottom-color: #9748f7;
+}
+
+.Cinput::placeholder {
+  color: #d3b6ff80; 
+}
+
+.Cdropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6d28d9;
+}
+
+.Cdropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f6f5f3; 
+  
+  overflow-y: auto;
+}
+
+.Cdropdown-item {
+  padding: 10px;
+  font-size: 20px;
+  color: #6d28d9; 
+  cursor: pointer;
+ 
+  border: 2px solid #000000a6; 
+  border-radius: 5px;
+  margin: 6px;
+  
+  
+}
+
+.Cdropdown-item:hover {
+  background-color: #cb43f54f; 
+ 
+}
+
+
+
+@keyframes slideUp {
+  to {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+}

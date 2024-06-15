@@ -1,0 +1,98 @@
+
+
+.bodyC {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.user-info1 {
+    padding: 50px; 
+    max-width: 1000px; 
+    width: 100%; 
+    opacity: 0;
+    transform: translateY(35%);
+    animation: slideUp 1s forwards;
+    align-items: center;
+    
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.form1 {
+    margin-top: 1rem; 
+}
+
+.field1 {
+    margin-bottom: 2rem; 
+}
+
+.field1 label {
+    display: block;
+    font-size: 1.4rem; 
+    color: #af6eff;
+    margin-bottom: 0.5rem; 
+    text-align: left; /
+}
+
+.field1 input {
+    width: 100%;
+    padding: 1rem 0.8rem; 
+    font-size: 1.8rem; 
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+    color: #000000;
+}
+
+.field1 input:focus {
+    border-bottom-color: #9748f7;
+}
+
+.field1 input::placeholder {
+    color: #d3b6ff93;
+}
+
+
+
+button {
+    background-color: #d4b0ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; 
+    
+}
+span{
+  color: #d4b0ff;
+  font-size: 2rem;
+}
+
+
+ h1 {
+  font-size: 2rem; 
+  color: #000000;
+  font-weight: 350;
+}
+
+h2{
+  font-size: 1.3rem; 
+  color: #0000009d;
+  font-weight: 350;
+  }
+
+button:hover {
+  background-color: #b280ff;
+  
+}

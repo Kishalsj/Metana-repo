@@ -1,0 +1,349 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: start;
+}
+
+
+
+.brand {
+  color: #3a3a3a;
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 50px;
+
+}
+
+.info, .rating {
+  flex: 1;
+  
+}
+
+.info {
+  text-align: left;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(10%); 
+  animation: slideUp 1s forwards;
+}
+
+.short {
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: 600;
+}
+
+.no {
+  color: rgba(0, 0, 0, 0.664);
+  font-weight: 600;
+}
+
+.info h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  
+}
+
+.info p, .info li, .note, .filled {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.589);
+  
+}
+
+.start-button {
+  background-color: #dd9eee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 400px;
+  height: 75px;
+  font-weight: 600;
+  font-size: 35px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.start-button:hover {
+  background-color: #d66cf38a;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 10px;
+  
+}
+
+.icon .p {
+  font-size: 50px;
+}
+
+.icon span {
+  margin-right: 10px;
+}
+
+.rating {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.rating h1 {
+  font-size: 72px;
+  color: #8cc152;
+}
+
+.rating h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.rateBanner {
+  position: relative;
+  top: 200px;
+  height: 1000px;
+  width: 1000px;
+  
+  
+}
+
+.responsive-rateBanner {
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+
+
+
+@media (max-width: 1100px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info h2 {
+  font-size: 35px;
+  }
+
+  .info p, .info li, .note, .filled {
+    font-size: 18px;
+  }
+
+  .header {
+    font-size: 15px;
+    margin-left: 50px;
+  }
+
+  .start-button {
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .rating h1 {
+    font-size: 50px;
+  }
+
+  .rating h2 {
+    font-size: 18px;
+  }
+
+  .rateBanner {
+    margin-top: -200px;
+    height: 600px;
+    width: 600px;
+    order:2 ;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    
+  }
+
+  .info {
+    text-align: left;
+    padding: 20px;
+    
+  }
+  .info {
+    order: 2;
+  }
+  .rateBanner {
+    order: 1;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .info h2 {
+    font-size: 30px;
+  }
+
+  .info p, .info li, .note, .filled {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 15px;
+    margin-left: 50px;
+  }
+
+  .rating h1 {
+    font-size: 40px;
+  }
+
+  .rating h2 {
+    font-size: 16px;
+  }
+
+  .rateBanner {
+    height: 400px;
+    width: 400px;
+    
+  }
+
+  .start-button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-left: 0;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    margin-top: 25px;
+    padding: 20px;
+  }
+
+  .info h2 {
+    font-size: 25px;
+  }
+
+  .info p, .info li, .note, .filled {
+    font-size: 14px;
+  }
+
+  .start-button {
+    width: 180px;
+    height: 50px;
+    font-size: 14px;
+    color: black;
+  }
+
+  .rating h1 {
+    font-size: 30px;
+  }
+
+  .rating h2 {
+    font-size: 14px;
+  }
+
+  .rateBanner {
+    
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    margin-left: 0;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+  }
+
+  .info p, .info li, .note, .filled {
+    font-size: 14px;
+  }
+
+  .start-button {
+    width: 180px;
+    height: 50px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .rating h1 {
+    font-size: 30px;
+  }
+
+  .rating h2 {
+    font-size: 14px;
+  }
+
+  .rateBanner {
+    margin-top: -200px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}

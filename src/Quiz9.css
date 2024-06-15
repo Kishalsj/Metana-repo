@@ -1,0 +1,76 @@
+.containerQ9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .user-info9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 50px;
+    max-width: 800px;
+    width: 100%;
+   
+  }
+  
+
+  
+  .form9 {
+    margin-top: 20px;
+  }
+  
+  .field9 {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .label {
+    font-size: 1em;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+  }
+  
+  .input:focus {
+    border-bottom-color: #9748f7;
+  }
+  
+  .input::placeholder {
+    color: #d3b6ff80;
+  }
+  
+
+  
+  .buttonQ9 button[type="submit"] {
+    background-color: #b521f085; 
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .buttonQ9  .sub:hover{
+
+color: #ffffffd0;
+background-color: #9748f7;
+
+  }
+  

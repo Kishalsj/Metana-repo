@@ -1,0 +1,110 @@
+
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+
+
+.Quiz5Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.page5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user-info5 {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(35%); 
+  animation: slideUp 1s forwards;
+  
+}
+
+
+
+
+
+.form5 {
+  margin-top: 20px;
+}
+
+.field5 {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.languages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.language-item {
+  position: relative;
+  flex: 1 1 calc(33.333% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8bb1fc3b; 
+  border: 2px solid #e5e7eb; 
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-item:hover {
+  background-color: #b280ff;
+}
+
+.language-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.language-item input:checked + label::after {
+  content: '✔';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #1915f0; 
+  font-size: 22px;
+}
+
+.language-item label {
+  font-size: 22px;
+  color: #6d28d9; 
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.language-item input:checked + label {
+   
+  color: #7c33e9; color: #7c33e9; 
+  padding: 8px;
+  border-radius: 5px;
+  margin: 0;
+  border: 3px solid #b380ffb6; 
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+
